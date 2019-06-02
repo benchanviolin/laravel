@@ -181,7 +181,7 @@
            },
            readTasks()
            {
-               axios.get('http://127.0.0.1:8000/task')
+               axios.get('/task')
                    .then(response => {
                        this.tasks = response.data.tasks;
                    });
